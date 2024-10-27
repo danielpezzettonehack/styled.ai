@@ -1,0 +1,30 @@
+/* Group hover styles */
+.group:hover .group-hover\:opacity-100 {
+    opacity: 1;
+}
+
+.opacity-0 {
+    opacity: 0;
+}
+
+.transition-opacity {
+    transition: opacity 0.3s ease;
+}
+
+/* Memori styles */
+.memori--blob-container {
+    opacity: 0%;
+}
+
+.memori--powered-by {
+    display: none !important;
+}
+
+/* Memori controls */
+.memori-website_assistant-layout--controls {
+    right: 20px !important;
+}
+
+.memori-website_assistant--trigger .memori-blob figure {
+    visibility: hidden;
+}

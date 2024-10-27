@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="flex min-h-screen bg-gray-100">
+        <!-- Sidebar -->
+        <aside class="fixed sidebar bg-white shadow-md">
+            <div class="p-6 border-b">
+                <div class="flex items-center gap-3">
+                    <img src="img/logo.png" alt="Logo" class="h-16">
+                    <span class="text-xl font-medium tracking-widest">MONCLER</span>
+                </div>
+            </div>
+            <nav class="p-4">
+                <ul class="space-y-2" id="sidebar-menu">
+                    <li>
+                        <button class="menu-item w-full flex items-center gap-3 px-4 py-2 rounded hover:bg-gray-100 active" data-section="dashboard">
+                            <i class="fas fa-robot"></i>
+                            <span>AI Management</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="menu-item w-full flex items-center gap-3 px-4 py-2 rounded hover:bg-gray-100" data-section="products">
+                            <i class="fas fa-box"></i>
+                            <span>Products</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="menu-item w-full flex items-center gap-3 px-4 py-2 rounded hover:bg-gray-100" data-section="analytics">
+                            <i class="fas fa-chart-bar"></i>
+                            <span>Analytics</span>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <header class="bg-white shadow-sm">
+                <div class="flex items-center justify-between px-6 py-4">
+                    <div class="flex items-center gap-3">
+                        <span class="text-xl font-medium">Moncler Admin Panel</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <img src="img/user-avatar.svg" alt="User Avatar" class="h-8 w-8 p-1 rounded-full bg-gray-100">
+                        <span class="text-sm font-medium">Admin User</span>
+                    </div>
+                </div>
+            </header>
+
+            <main class="p-6" id="main-content">
+                <!-- Content will be loaded dynamically -->
+            </main>
+        </div>
+    </div>
+
+    <script>
+
+    </script>
+    <script src="js/products.js"></script>
+    <script src="js/analytics.js"></script>
+    <script src="js/chatbot.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

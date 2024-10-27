@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHECKOUT</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>CHECKOUT</h1>
+    </header>
+
+    <div class="checkout-container">
+        <div class="checkout-main">
+            <div class="steps">
+                <div class="step active">1. DELIVERY</div>
+                <div class="step">2. PAYMENT</div>
+            </div>
+
+            <section class="contact-info">
+                <h2>Contact Information</h2>
+                <form>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>First Name*</label>
+                            <input type="text" value="John">
+                        </div>
+                        <div class="form-group">
+                            <label>Last Name*</label>
+                            <input type="text" value="Doe">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Email*</label>
+                        <input type="email" value="john.doe@example.com">
+                    </div>
+                </form>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="privacy">
+                    <label for="privacy">
+                        I have read and understood the <a href="#">Privacy Policy</a>. I consent to receiving communications about my cart.
+                    </label>
+                </div>
+            </section>
+
+            <section class="shipping-address">
+                <h2>Shipping Address</h2>
+                <div class="address-options">
+                    <button class="address-button active">SELECT ADDRESS</button>
+                    <button class="address-button">ADD NEW ADDRESS</button>
+                </div>
+            </section>
+        </div>
+
+        <aside class="order-summary">
+            <h2>Order Summary <span>(1 ITEM)</span></h2>
+            <a href="#" class="edit-order">EDIT ORDER ›</a>
+            
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="moncler.png" alt="Reversible Wool & Cashmere Padded Hoodie">
+                </div>
+                <div class="product-details">
+                    <h3>Reversible Wool & Cashmere Padded Hoodie</h3>
+                    <p>Quantity: 1</p>
+                    <p>Colour: Light Beige</p>
+                    <p>Size: L</p>
+                    <div class="price">€ 1.700,00</div>
+                </div>
+            </div>
+
+            <div class="totals">
+                <div class="total-line">
+                    <span>Subtotal</span>
+                    <span>€ 1.700,00</span>
+                </div>
+                <div class="total-line final">
+                    <span>Order Total</span>
+                    <span>€ 1.700,00</span>
+                </div>
+            </div>
+
+            <button class="proceed-button">Proceed to payment</button>
+        </aside>
+    </div>
+</body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUXURY STORE</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/lucide-static/font/lucide.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@memori.ai/memori-react@latest/dist/styles.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="https://esm.run/@memori.ai/memori-webcomponent@latest/dist/memori-webcomponent.js"></script>
+</head>
+<body class="min-h-screen bg-white">
+    <!-- Header -->
+    <header class="fixed top-0 w-full bg-white z-50 border-b">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <!-- Left side -->
+                <div class="flex items-center gap-8">
+                    <i class="lucide-menu h-6 w-6 cursor-pointer"></i>
+                    <div class="flex items-center gap-3">
+                        <img src="img/logo.png" alt="Moncler Logo" class="h-8">
+                        <span class="text-lg tracking-widest font-medium">MONCLER</span>
+                    </div>
+                </div>
+                
+                <!-- Center -->
+                <div class="flex items-center gap-8">
+                    <a href="#" class="text-sm tracking-wider">Latest</a>
+                    <a href="#" class="text-sm tracking-wider">Men</a>
+                    <a href="#" class="text-sm tracking-wider">Women</a>
+                    <a href="#" class="text-sm tracking-wider">Children</a>
+                    <a href="#" class="text-sm tracking-wider">Shoes</a>
+                    <a href="#" class="text-sm tracking-wider">Genius</a>
+                    <a href="#" class="text-sm tracking-wider">Collections</a>
+                </div>
+                
+                <!-- Right side -->
+                <div class="flex items-center gap-6">
+                    <i class="lucide-phone h-5 w-5 cursor-pointer"></i>
+                    <i class="lucide-search h-5 w-5 cursor-pointer"></i>
+                    <i class="lucide-heart h-5 w-5 cursor-pointer"></i>
+                    <i class="lucide-user h-5 w-5 cursor-pointer"></i>
+                    <i class="lucide-shopping-bag h-5 w-5 cursor-pointer"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="pt-16">
+        <div class="relative h-[700px] bg-gray-100">
+            <img src="img/hero.jpg" alt="Hero" class="w-full h-full object-cover">
+            <div class="absolute inset-0 flex items-center justify-center text-center">
+                <div class="space-y-6">
+                    <h1 class="text-5xl font-bold text-white">MONCLER X LIU LU</h1>
+                    <button class="bg-white text-black px-12 py-4 text-lg hover:bg-gray-100 transition-colors">
+                        DISCOVER MORE
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Grid -->
+    <div class="container mx-auto px-4 py-16">
+        <h2 class="text-2xl font-bold mb-12 text-center">EXPLORE MONCLER NEW COLLECTION</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <!-- Product 1 -->
+            <div class="group cursor-pointer">
+                <div class="product-image mb-4 relative">
+                    <img src="img/Cardigan white.png" alt="White Cardigan">
+                    <div class="absolute top-4 right-4 text-center">
+                        <div class="virtual-try-on">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/>
+                                <circle cx="12" cy="13" r="3"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <h3 class="text-sm font-medium mb-2">White Cardigan</h3>
+                    <p class="text-gray-600">€1,700</p>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="group cursor-pointer">
+                <div class="product-image mb-4 relative">
+                    <img src="img/giacca black.png" alt="Black Jacket">
+                    <div class="absolute top-4 right-4 text-center">
+                        <div class="virtual-try-on">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/>
+                                <circle cx="12" cy="13" r="3"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <h3 class="text-sm font-medium mb-2">Black Jacket</h3>
+                    <p class="text-gray-600">€1,950</p>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="group cursor-pointer">
+                <div class="product-image mb-4 relative">
+                    <img src="img/tshirt black.png" alt="Black T-Shirt">
+                    <div class="absolute top-4 right-4 text-center">
+                        <div class="virtual-try-on">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/>
+                                <circle cx="12" cy="13" r="3"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <h3 class="text-sm font-medium mb-2">Black T-Shirt</h3>
+                    <p class="text-gray-600">€550</p>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="group cursor-pointer">
+                <div class="product-image mb-4 relative">
+                    <img src="img/tshirt rossa.png" alt="Red T-Shirt">
+                    <div class="absolute top-4 right-4 text-center">
+                        <div class="virtual-try-on">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/>
+                                <circle cx="12" cy="13" r="3"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <h3 class="text-sm font-medium mb-2">Red T-Shirt</h3>
+                    <p class="text-gray-600">€550</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Banner Section -->
+    <div class="relative h-[600px] overflow-hidden">
+        <img src="img/banner.png" alt="Jackets & Coats" class="w-full h-full object-cover">
+        <div class="absolute inset-0 flex flex-col items-center justify-center text-center bg-black bg-opacity-20">
+            <h2 class="text-4xl font-bold text-white mb-6">JACKETS & COATS</h2>
+            <div class="flex gap-4">
+                <a href="#" class="bg-white text-black px-8 py-3 hover:bg-gray-100 transition-colors">SHOP MEN</a>
+                <a href="#" class="bg-white text-black px-8 py-3 hover:bg-gray-100 transition-colors">SHOP WOMEN</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="font-bold mb-4">Help</h3>
+                    <ul class="space-y-2">
+                        <li>Contact Us</li>
+                        <li>Shipping</li>
+                        <li>Returns</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-4">About</h3>
+                    <ul class="space-y-2">
+                        <li>Our Story</li>
+                        <li>Stores</li>
+                        <li>Careers</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-4">Legal</h3>
+                    <ul class="space-y-2">
+                        <li>Privacy Policy</li>
+                        <li>Terms of Service</li>
+                        <li>Cookie Policy</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-4">Newsletter</h3>
+                    <input type="email" placeholder="Enter your email" class="w-full p-2 bg-white/10 border border-white/20 text-white">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="https://esm.run/@memori.ai/memori-webcomponent@latest/dist/memori-webcomponent.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@memori.ai/memori-react@latest/dist/styles.min.css" />
+  <memori-client
+    memoriName="M"
+    ownerUserName="dpezzettone"
+    memoriID="bae4923d-04d6-4e35-9910-0163edb44bae"
+    ownerUserID="4d4bbe49-a089-4639-8e04-d4493d93ef56"
+    tenantID="www.aisuru.com"
+    engineURL="https://engine.memori.ai"
+    apiURL="https://backend.memori.ai"
+    baseURL="https://www.aisuru.com"
+    uiLang="EN"
+    spokenLang="EN"
+    layout="WEBSITE_ASSISTANT"
+    showInstruct="false"
+    showSettings="false"
+    showClear="false"
+    showAIicon="false"
+    showWhyThisAnswer="false"
+    showTypingText="false"
+    showOnlyLastMessages="false"
+    showTranslationOriginal="false"
+    showCopyButton="false"
+    showShare="false"
+    showLogin="true"
+    enableAudio="false"
+    integrationID="b014cc7b-9160-4006-824d-6b992906ad15"
+    initialQuestion="start"
+  ></memori-client>
+
+</body>
+</html>
